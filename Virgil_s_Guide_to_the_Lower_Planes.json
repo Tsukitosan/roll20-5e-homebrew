@@ -1,0 +1,148 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "VirgilsGuidetotheLowerPlanes",
+				"abbreviation": "VGLP",
+				"full": "Virgil's Guide to the Lower Planes",
+				"url": "",
+				"authors": [
+					"Tsukitosan"
+				],
+				"convertedBy": [
+					"Tsukitosan"
+				]
+			}
+		],
+		"dateAdded": 1603720813,
+		"dateLastModified": 1603720813
+	},
+	"monster": [
+		{
+			"name": "Dullahan",
+			"source": "VirgilsGuidetotheLowerPlanes",
+			"size": "L",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d10 + 72",
+				"average": 171
+			},
+			"speed": {
+				"walk": {
+					"number": 60,
+					"condition": ",30ft. when unmounted"
+				}
+			},
+			"str": 19,
+			"dex": 15,
+			"con": 18,
+			"int": 15,
+			"wis": 13,
+			"cha": 11,
+			"save": {
+				"str": "+7",
+				"dex": "+5",
+				"int": "+5"
+			},
+			"skill": {
+				"athletics": "+7",
+				"intimidation": "+3"
+			},
+			"senses": [
+				"darkvision 120ft."
+			],
+			"passive": 11,
+			"resist": [
+				{
+					"special": "bludgeoning, piercing and slashing from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"necrotic"
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"conditionImmune": [
+				"charmed",
+				"deafened",
+				"grappled",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Bonerattle"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Command Undead (3/day)",
+					"entries": [
+						"All undead within a 60ft radius must make an Intelligence saving throw {@dc 12} or be under the dullahan's control for 1 hour. Undead with an Intelligence score below 8 automatically fail this save."
+					]
+				},
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If the dullahan moves at least 20 ft. straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the dullahan can make another attack with its horse's hooves against it as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Spine Whip",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 15 ft., one target. {@h}6 ({@damage 1d4 + 4}) slashing damage, plus 18 ({@damage 4d8}) necrotic damage."
+					]
+				},
+				{
+					"name": "Call of the Grave",
+					"entries": [
+						"One creature within 30ft. of the dullahan must make a Wisdom saving throw {@dc 12}. On a failure, that creature must make a death saving throw which remains until the next time the target recovers from falling {@condition unconscious}."
+					]
+				},
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"grassland",
+				"hill",
+				"urban"
+			],
+			"tokenUrl": "https://i.imgur.com/3WgbkfY.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		}
+	]
+}
