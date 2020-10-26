@@ -1,0 +1,79 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "GrimloresGrimoire",
+				"abbreviation": "GGHB",
+				"full": "Grimlore's Grimoire",
+				"url": "https://www.dmsguild.com/product/250265/Grimlores-Grimoire",
+				"authors": [
+					"Grim Press",
+					"Trevor Armstrong"
+				],
+				"convertedBy": [
+					"Tsukito-san"
+				]
+			}
+		],
+		"dateAdded": 1603715623,
+		"dateLastModified": 1603715623
+	},
+	"spell": [
+		{
+			"name": "Ascending Flame",
+			"source": "GrimloresGrimoire",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A flame-like radiance burns a creature that you can see within range. The target must succeed on a Dexterity saving throw or take {@damage 1d6} radiant damage, granting you half of the damage dealt as temporary hit points. The target gains no benefit from cover for this saving throw."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"The spell's damage increases by {@dice 1d6} when you reach 5th level ({@dice 2d6}), 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	]
+}
