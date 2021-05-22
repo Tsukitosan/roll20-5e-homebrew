@@ -1,0 +1,999 @@
+{
+	"siteVersion": "1.129.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "VirgilsGuidetotheLowerPlanes",
+				"abbreviation": "VGLP",
+				"full": "Virgil's Guide to the Lower Planes",
+				"url": "",
+				"authors": [
+					"Tsukitosan"
+				],
+				"convertedBy": [
+					"Tsukitosan"
+				]
+			}
+		],
+		"dateAdded": 1621657079,
+		"dateLastModified": 1621657079
+	},
+	"monster": [
+		{
+			"name": "Dullahan",
+			"source": "VirgilsGuidetotheLowerPlanes",
+			"size": "L",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d10 + 72",
+				"average": 171
+			},
+			"speed": {
+				"walk": {
+					"number": 60,
+					"condition": ",30ft. when unmounted"
+				}
+			},
+			"str": 19,
+			"dex": 15,
+			"con": 18,
+			"int": 15,
+			"wis": 13,
+			"cha": 11,
+			"save": {
+				"str": "+7",
+				"dex": "+5",
+				"int": "+5"
+			},
+			"skill": {
+				"athletics": "+7",
+				"intimidation": "+3"
+			},
+			"senses": [
+				"darkvision 120ft."
+			],
+			"passive": 11,
+			"resist": [
+				{
+					"special": "bludgeoning, piercing and slashing from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"necrotic"
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"conditionImmune": [
+				"charmed",
+				"deafened",
+				"grappled",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Bonerattle"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Command Undead (3/day)",
+					"entries": [
+						"All undead within a 60ft radius must make an Intelligence saving throw {@dc 12} or be under the dullahan's control for 1 hour. Undead with an Intelligence score below 8 automatically fail this save."
+					]
+				},
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If the dullahan moves at least 20 ft. straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the dullahan can make another attack with its horse's hooves against it as a bonus action."
+					]
+				},
+				{
+					"name": "Headless",
+					"entries": [
+						"The dullahan can survive without its head and can throw it up to 30 ft. All abilities that originate from the dullahan are centered on the head, other than Spine Whip."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Spine Whip",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 15 ft., one target. {@h}6 ({@damage 1d4 + 4}) slashing damage, plus 18 ({@damage 4d8}) necrotic damage."
+					]
+				},
+				{
+					"name": "Call of the Grave",
+					"entries": [
+						"One creature within 30ft. of the dullahan must make a Wisdom saving throw {@dc 12}. On a failure, that creature must make a death saving throw which remains until the next time the target recovers from falling {@condition unconscious}."
+					]
+				},
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"grassland",
+				"hill",
+				"urban"
+			],
+			"tokenUrl": "https://i.imgur.com/3WgbkfY.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Knight Devil",
+			"source": "VirgilsGuidetotheLowerPlanes",
+			"size": "L",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d10 + 100",
+				"average": 210
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 28,
+			"dex": 18,
+			"con": 20,
+			"int": 5,
+			"wis": 10,
+			"cha": 15,
+			"save": {
+				"str": "+13",
+				"dex": "+8"
+			},
+			"skill": {
+				"acrobatics": "+8",
+				"athletics": "+13",
+				"intimidation": "+6"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"cold"
+			],
+			"immune": [
+				"fire",
+				"poison",
+				{
+					"special": "bludgeoning, piercing and slashing from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"Understands Infernal",
+				"but can't speak"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The knight devil has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Rampage",
+					"entries": [
+						"When the knight devil reduces a creature to 0 hit points with a melee attack on its turn, the knight devil can take a bonus action to move up to half its speed and make another attack."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The knight devil makes two slam attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}31 ({@damage 4d10 + 9}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Hellish Leap",
+					"entries": [
+						"The knight devil leaps to a point within 60 ft. of it. When it lands, all creatures within 10 ft. of it must make a {@dc 17} Dexterity save or take 36 ({@damage 6d8 + 9}) bludgeoning damage and 7 ({@damage 2d6}) fire damage, or half as much on a successful save."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/PoKtD1O.png",
+			"traitTags": [
+				"Magic Resistance",
+				"Rampage"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS",
+				"I"
+			],
+			"damageTags": [
+				"B",
+				"F"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Cacodemon",
+			"source": "VirgilsGuidetotheLowerPlanes",
+			"size": "L",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d10 + 52",
+				"average": 123
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 25,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 22,
+			"dex": 10,
+			"con": 18,
+			"int": 3,
+			"wis": 6,
+			"cha": 15,
+			"save": {
+				"str": "+8",
+				"dex": "+2"
+			},
+			"skill": {
+				"athletics": "+8",
+				"intimidation": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				{
+					"special": "bludgeoning, piercing and slashing from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"grappled",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"Understands Abyssal",
+				"but can't speak"
+			],
+			"cr": "4",
+			"action": [
+				{
+					"name": "Bile",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 60 ft., one target. {@h}16 ({@damage 5d4 + 4}) necrotic damage. Target must make a {@dc 12} Constitution save or be {@condition blinded} until the start of the cacodemon's next turn."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}19 ({@damage 3d8 + 6}) piercing damage, plus 7 ({@damage 2d6}) necrotic damage."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/H9tLjRM.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AB",
+				"CS"
+			],
+			"damageTags": [
+				"N",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Beckoner",
+			"source": "VirgilsGuidetotheLowerPlanes",
+			"size": "M",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 40",
+				"average": 85
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 45,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 11,
+			"dex": 20,
+			"con": 18,
+			"int": 15,
+			"wis": 13,
+			"cha": 19,
+			"save": {
+				"dex": "+8",
+				"int": "+5"
+			},
+			"skill": {
+				"acrobatics": "+11",
+				"deception": "+7",
+				"persuasion": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				{
+					"special": "bludgeoning, piercing and slashing from nonmagical weapons"
+				}
+			],
+			"languages": [
+				"Abyssal"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"will": [
+						"{@spell misty step}"
+					],
+					"daily": {
+						"1": [
+							"{@spell summon greater demon|XGE}"
+						],
+						"4": [
+							"{@spell summon lesser demons|XGE}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Conjuration Adept",
+					"entries": [
+						"The beckoner has advantage on concentration checks made to control the demons it summons."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The beckoner has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The beckoner makes two claw attacks."
+					]
+				},
+				{
+					"name": "Necrotic Reave",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 60/60 ft., one target. {@h}27 ({@damage 6d8}) necrotic damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Evade",
+					"entries": [
+						"If the beckoner is targeted by an effect, it can use its reaction to move up to half its speed in order to try and evade the attacker's range."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/eOsDJoW.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Marauder",
+			"source": "VirgilsGuidetotheLowerPlanes",
+			"size": "L",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "23d8 + 46",
+				"average": 149
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 20,
+			"dex": 18,
+			"con": 14,
+			"int": 18,
+			"wis": 15,
+			"cha": 16,
+			"save": {
+				"dex": "+8",
+				"int": "+8"
+			},
+			"skill": {
+				"acrobatics": "+8",
+				"athletics": "+9",
+				"animal handling": "+6",
+				"insight": "+6",
+				"intimidation": "+7",
+				"perception": "+6",
+				"survival": "+6"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"cold",
+				"lightning"
+			],
+			"immune": [
+				"fire",
+				{
+					"special": "bludgeoning, piercing and slashing from nonmagical weapons"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion"
+			],
+			"languages": [
+				"Abyssal",
+				"Infernal",
+				"Common"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Hellish Weapons",
+					"entries": [
+						"The marauder's weapon attacks are magical and deal an extra 13 ({@damage 3d8}) necrotic damage on a hit."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The marauder has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Tactical Retreat",
+					"entries": [
+						"All opportunity attacks against the marauder have disadvantage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The marauder makes two argent greataxe attacks and one hand crossbow attack."
+					]
+				},
+				{
+					"name": "Summon Hound (3/day)",
+					"entries": [
+						"The marauder summons a spectral companion to aid it in battle. This companion counts as an elemental, not a beast, and is medium instead of large."
+					]
+				},
+				{
+					"name": "Hand Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 30/120 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage, plus 17 ({@damage 3d8}) necrotic damage. The marauder can fire its hand crossbow as a bonus action."
+					]
+				},
+				{
+					"name": "Argent Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}19 ({@damage 2d12 + 6}) slashing damage, plus 17 ({@damage 3d8 + 4}) necrotic damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Argent Shield {@recharge 5}",
+					"entries": [
+						"As a reaction, the marauder adds +4 to its AC until the start of its next turn."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/82RjpXj.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			]
+		},
+		{
+			"name": "Lesser Spawn of Yog-Sothoth",
+			"shortName": "spawn",
+			"source": "VirgilsGuidetotheLowerPlanes",
+			"size": "H",
+			"type": "aberration",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d12 + 80",
+				"average": 210
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 23,
+			"dex": 14,
+			"con": 18,
+			"int": 6,
+			"wis": 10,
+			"cha": 13,
+			"save": {
+				"str": "+10",
+				"wis": "+4"
+			},
+			"skill": {
+				"athletics": "+14",
+				"survival": "+4",
+				"stealth": "+6"
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"necrotic",
+				"psychic"
+			],
+			"immune": [
+				"force",
+				{
+					"special": "bludgeoning, piercing and slashing from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Deep Speech"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The spawn has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If the spawn moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone} and take an extra 6 ({@damage 1d12}) bludgeoning damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Invisibility",
+					"entries": [
+						"The spawn magically turns {@condition invisible} until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment the spawn wears or carries is {@condition invisible} with it."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The spawn makes two slam attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d10 + 6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Necrotic Tentacles",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 3d6 + 2}) bludgeoning damage, plus 10 ({@damage 4d4}) necrotic damage."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Cloak",
+					"entries": [
+						"The spawn uses its Invisibility action, moves up to half its movement speed and takes the Hide action."
+					]
+				},
+				{
+					"name": "Tendrils of Darkness",
+					"entries": [
+						"The spawn makes one attack with its necrotic tentacles."
+					]
+				},
+				{
+					"name": "Visage of Insanity (Costs 3 Actions)",
+					"entries": [
+						"All creatures within 10 ft. that can see the spawn must make a Wisdom saving throw (save {@dc 16}) or roll on the short-term madness table (DMG pg. 259) or be afflicted with that effect until the end of their next turn."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/Zkw7KZU.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DS"
+			],
+			"damageTags": [
+				"B",
+				"N"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Vampiric Mind Flayer",
+			"source": "VirgilsGuidetotheLowerPlanes",
+			"page": 252,
+			"size": "M",
+			"type": "undead",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 85,
+				"formula": "10d8 + 40"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 18,
+			"int": 5,
+			"wis": 15,
+			"cha": 18,
+			"save": {
+				"dex": "+7",
+				"int": "+0",
+				"wis": "+5",
+				"cha": "+7"
+			},
+			"skill": {
+				"perception": "+5",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"resist": [
+				"necrotic",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"languages": [
+				"telepathy 120 ft. but can only project emotions"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The mind flayer can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the mind flayer has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"The mind flayer doesn't require air, food, or sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mind flayer makes two Claw attacks or one Claw attack and one Tentacles attack."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage plus 10 ({@damage 3d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Tentacles",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}11 ({@damage 1d6 + 4}) piercing damage, and if the target is a creature, it is {@condition grappled} (escape {@dc 15})."
+					]
+				},
+				{
+					"name": "Drink Sapience",
+					"entries": [
+						"The mind flayer targets one creature it is grappling. The target must succeed on a {@dc 15} Wisdom saving throw or take 14 ({@damage 4d6}) psychic damage and gain 1 level of {@condition exhaustion}. The mind flayer regains a number of hit points equal to the psychic damage dealt. A creature reduced to 0 hit points by the psychic damage dies."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Disrupt Psyche (Recharge 5-6)",
+					"entries": [
+						"The mind flayer magically emits psionic energy in a 30-foot-radius sphere centered on itself. Each creature in that area must succeed on a {@dc 15} Intelligence saving throw or be {@condition incapacitated} for 1 minute. The {@condition incapacitated} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Vampiric Mind Flayer",
+				"source": "VRGR",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"When the mind flayers of Bluetspur (see chapter 3) could find no cure for their overlord's affliction, their degenerating elder brain turned to radical methods to stave off dementia and death. The results were vampiric mind flayers, feral atrocities spawned from mind flayer tadpoles infected with vampirism. These specialized but flawed terrors serve a single purpose: to drain the cerebral fluids from sapient minds. After doing so, they return to the Elder Brain of Bluetspur, which liquefies them into its pool and releases their stolen essences amid a hormone brine. This grotesque balm stalls the elder brain's degeneration but is far from a cure.",
+							"Vampiric mind flayers are physically and mentally unstable beings. Ghoulish creatures, they let nothing stand between them and their existential imperatives. Although they possess the telepathic abilities of mind flayers, their brains aren't equipped to employ them. Instead, they bombard nearby creatures with a mental static of visceral visions. While these ravenous creatures are horrifying to behold, they unsettle none more than other mind flayers, which consider them abominations."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/VRGR/Vampiric Mind Flayer.jpg"
+						}
+					}
+				]
+			},
+			"traitTags": [
+				"Spider Climb",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"exhaustion",
+				"grappled",
+				"incapacitated"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	]
+}
